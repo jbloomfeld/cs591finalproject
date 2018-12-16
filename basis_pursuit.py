@@ -34,10 +34,6 @@ M = spmatrix(
 70,71,72,76,71,72,76,72,76,76,75])
 
 
-
-
-
-
 # Basis functions are Gabor pulses:  for k = 0,...,K-1,
 #
 #     exp(-(t - k * tau)^2/sigma^2 ) * cos (l*omega0*t),  l = 0,...,L
