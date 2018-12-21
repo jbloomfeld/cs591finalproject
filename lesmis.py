@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import networkx as nx
-filename = 'lesmis.gml'
+filename = './data/lesmis.gml'
 G_lesmis=nx.read_gml(filename)
 #G_ka=nx.karate_club_graph()
 G_lesmis.node
