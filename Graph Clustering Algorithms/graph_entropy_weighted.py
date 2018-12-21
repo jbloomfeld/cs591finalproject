@@ -31,7 +31,7 @@ def graph_entropy(filename):
   candidates = set(data)
   clusters = []
   while candidates:
-    print >> sys.stderr, len(candidates)
+    # print >> sys.stderr, len(candidates)
     v = candidates.pop() # select a random vertex
     cluster = set(data[v]) # add neighbors to cluster
     cluster.add(v)

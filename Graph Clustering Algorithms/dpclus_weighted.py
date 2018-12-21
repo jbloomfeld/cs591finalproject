@@ -156,7 +156,7 @@ def dpclus(filename):
       print
 
       num_clusters += 1
-      print >> sys.stderr, num_clusters, nn, 2. * ne / nn / (nn-1)
+      # print >> sys.stderr, num_clusters, nn, 2. * ne / nn / (nn-1)
 
 if __name__ == '__main__':
   import sys

@@ -94,8 +94,8 @@ def coach(filename):
   count = 0
   print >> sys.stderr, 'finding preliminary cores...'
   for i,(vertex,neighbors) in enumerate(data.iteritems()):
-    if i > 0 and i % 1000 == 0:
-      print >> sys.stderr, i, '/', len(data)
+    # if i > 0 and i % 1000 == 0:
+      # print >> sys.stderr, i, '/', len(data)
     # build neighborhood graph
     vertices = set([vertex]) | neighbors
     size1_neighbors = set()
@@ -163,8 +163,8 @@ def coach(filename):
         if d * len(sg) > d_i * len(SC[index]):
           SC[index] = sg
 
-  # step 2: adding peripheral proteins
-  print >> sys.stderr, 'adding peripheral proteins...'
+  # step 2: adding peripheral components
+  print >> sys.stderr, 'adding peripheral components...'
   clusters = set()
   for core in SC:
     nodes = frozenset(core)

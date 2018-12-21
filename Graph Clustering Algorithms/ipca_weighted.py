@@ -64,7 +64,7 @@ def ipca(filename):
 			print ' '.join(cluster)
 
 			num_clusters += 1
-			print >> sys.stderr, num_clusters, len(cluster), len(unvisited)
+			# print >> sys.stderr, num_clusters, len(cluster), len(unvisited)
 
 		if not unvisited: break
 
